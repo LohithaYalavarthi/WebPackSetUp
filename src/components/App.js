@@ -1,17 +1,19 @@
 import 'antd/dist/antd.css';
 import React, { Component } from 'react';
-import { Button } from 'antd';
+import { Layout } from 'antd';
+const { Header, Footer, Sider, Content } = Layout;
+
 class App extends Component {
     render() {
         return (
-            <Layout>
-      <Sider>Sider</Sider>
-      <Layout>
-        <Header>Header</Header>
+      <Layout style={{ padding: '20px 24px 24px' }}>
+       <Sider>Sider</Sider>
+       <Layout>
+        <Header style={{color : "red"}}>Header</Header>
         <Content>Content</Content>
         <Footer>Footer</Footer>
       </Layout>
-    </Layout>
+     </Layout>
         );
     }
 }

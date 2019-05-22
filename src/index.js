@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from 'react-dom';
 import App from "./components/App";
-
-
-ReactDOM.render(<App/>,document.getElementById("root")
+import Grid from "./components/Grid";
+import TableElementsDesign from "./components/Table"
+ReactDOM.render(<TableElementsDesign/>,document.getElementById("root")
 )
